@@ -1,5 +1,5 @@
 function typeWriter(element) {
-    const textArray = "Hello world".split('');
+    const textArray = "Hello, world!".split('');
     element.innerHTML = '';
     textArray.forEach((c, i) => {
         setTimeout(() => {
