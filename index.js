@@ -1,11 +1,15 @@
 function typeWriter(element) {
-    let textoArray = element.innerHTML.split('');
+    const textArray = "Hello world".split('');
     element.innerHTML = '';
-    textoArray.forEach((c, i) => {
+    textArray.forEach((c, i) => {
         setTimeout(() => {
             element.innerHTML += c;
         }, 150 * i); 
     });
-  }
+}
 
-  typeWriter(document.querySelector('h1'));
+typeWriter(document.querySelector('h1'));
+
+setInterval(() => {
+    typeWriter(document.querySelector('h1'));
+}, 4000);
